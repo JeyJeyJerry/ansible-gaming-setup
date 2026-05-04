@@ -46,7 +46,7 @@ git clone https://github.com/JeyJeyJerry/ansible-gaming-setup.git
 - Aja kopioidun kansion sisällä komento:
 
 ```bash
-ansible-playbook site.yml
+ansible-playbook site.yml -K
 ```
 
 - Terminaalissa näkyy vaiheittain, mitä ohjelma tekee
