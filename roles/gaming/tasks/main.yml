@@ -1,1 +1,26 @@
-koodi tänne bro
+- name: check that contrib and non-free repos are enabled
+  apt_repository:
+    repo: "deb http://deb.debian.org/debian {{ ansible_distribution_release}} main contrib non-free non-free-firmware"
+    state: present
+
+- name: update apt cache
+  apt:
+    update_cache: yes
+
+- name: upgrade system
+  apt:
+    upgrade: dist
+
+- name: install Steam
+  apt:
+    name: steam
+    state: present
+
+- name: download Discord
+  get_url:
+    url: "{{ discord_url }}"
+    dest: "{{ discord_deb_path }}"
+
+- name: install Discord
+  apt:
+    deb: "{{ discord_deb_path }}"
