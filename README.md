@@ -20,8 +20,7 @@ sudo apt install ansible git openssh-server
 - Käynnistä **SSH-demoni** ja varmista, että se toimii komennoilla:
 
 ```bash
-sudo systemctl start ssh
-sudo systemctl enable ssh
+sudo systemctl enable --now ssh
 sudo systemctl status ssh
 ```
 
