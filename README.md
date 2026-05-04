@@ -1,6 +1,6 @@
 # Ansible Gaming Setup
 
-Server Management course project
+Palvelinten hallinta-kurssin projekti peliympäristön automatisointiin
 
 ## Mihin tarkoitukseen?
 
