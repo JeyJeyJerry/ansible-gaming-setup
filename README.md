@@ -30,6 +30,13 @@ sudo systemctl status ssh
 ssh localhost
 ```
 
+- Automatisoi SSH kirjautuminen generoimalla SSH-avain:
+
+```bash
+ssh-keygen
+ssh-copy-id localhost
+```
+
 - Tämän jälkeen kopioi varasto komennolla:
 
 ```bash
