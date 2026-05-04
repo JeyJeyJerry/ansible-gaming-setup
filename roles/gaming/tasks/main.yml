@@ -20,6 +20,10 @@
   command: dpkg --add-architecture i386
   when: "'i386' not in foreign_arch.stdout"
 
+- name: update apt cache after adding i386
+  apt:
+    update_cache: yes
+
 - name: install Steam
   apt:
     name: steam-installer
