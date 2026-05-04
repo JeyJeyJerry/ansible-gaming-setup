@@ -15,7 +15,7 @@ Palvelinten hallinta-kurssin projekti peliympäristön automatisointiin
 [![Demo Video](media/demo_thumbnail.png)](media/project_demo(comp).mp4)
 
 - **Playbookin** toimimista varten täytyy olla paketit `ansible`, `git` ja `openssh-server` asennettuna
-- Ansiblen ja git saa asennettua komenolla:
+- Paketit saa asennettua komenolla:
 
 ```bash
 sudo apt install ansible git openssh-server
