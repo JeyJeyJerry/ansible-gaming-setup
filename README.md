@@ -14,19 +14,19 @@ Palvelinten hallinta-kurssin projekti peliympäristön automatisointiin
 - Ansiblen ja git saa asennettua komenolla:
 
 ````bash
-$ sudo apt install ansible git
+sudo apt install ansible git
 ````
 
 - Tämän jälkeen kopioi varasto komennolla:
 
 ```bash
-$ git clone https://github.com/JeyJeyJerry/ansible-gaming-setup.git
+git clone https://github.com/JeyJeyJerry/ansible-gaming-setup.git
 ```
 
 - Aja kopioidun kansion sisällä komento:
 
 ```bash
-$ ansible-playbook site.yml
+ansible-playbook site.yml
 ```
 
 - Terminaalissa näkyy vaiheittain, mitä ohjelma tekee
