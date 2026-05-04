@@ -1,6 +1,6 @@
 - name: check that contrib and non-free repos are enabled
   apt_repository:
-    repo: "deb http://deb.debian.org/debian {{ ansible_distribution_release}} main contrib non-free non-free-firmware"
+    repo: "deb http://deb.debian.org/debian {{ ansible_distribution_release }} main contrib non-free non-free-firmware"
     state: present
 
 - name: update apt cache
@@ -11,9 +11,14 @@
   apt:
     upgrade: dist
 
+- name: enable i386 architecture
+  command: dpkg --add-architecture i386
+  args:
+    creates: /var/lib/dpkg/arh
+
 - name: install Steam
   apt:
-    name: steam
+    name: steam-installer
     state: present
 
 - name: download Discord
@@ -24,3 +29,8 @@
 - name: install Discord
   apt:
     deb: "{{ discord_deb_path }}"
+
+- name: install NVIDIA drivers
+  apt:
+    name: nvidia-driver
+    state: present
