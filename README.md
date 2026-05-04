@@ -10,6 +10,10 @@ Palvelinten hallinta-kurssin projekti peliympäristön automatisointiin
 
 ## Käyttöohjeet
 
+### Demo video
+
+[![Demo Video](./thumbnail.png)](./project_demo(comp).mp4)
+
 - **Playbookin** toimimista varten täytyy olla paketit `ansible`, `git` ja `openssh-server` asennettuna
 - Ansiblen ja git saa asennettua komenolla:
 
