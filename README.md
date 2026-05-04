@@ -30,7 +30,7 @@ sudo systemctl status ssh
 ssh localhost
 ```
 
-- Automatisoi SSH kirjautuminen generoimalla SSH-avain:
+- Automatisoi SSH-kirjautuminen generoimalla SSH-avain:
 
 ```bash
 ssh-keygen
