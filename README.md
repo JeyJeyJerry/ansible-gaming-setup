@@ -152,6 +152,6 @@ ansible-gaming-setup/
 - [terokarvinen.com](https://terokarvinen.com/)
 - [Debian Wiki](https://wiki.debian.org/)
 - [Debian Documentation](https://www.debian.org/doc/)
-- [Ansible Documentation (apt, get_url, apt_repository)](https://docs.ansible.com/)
+- [Ansible Documentation (apt, get_url, apt_repository, command, conditionals)](https://docs.ansible.com/)
 - [How to install Steam on Debian](https://linuxcapable.com/how-to-install-steam-on-debian-linux/)
 - [How to install Discord on Debian](https://linuxcapable.com/how-to-install-discord-on-debian-linux/)
